@@ -7,19 +7,30 @@ body {
 
 h1 {
   font-size: 28px;
-  color: #ffffff;
+  color: #e9ecef;
   margin: 0;
 }
 
 h2 {
   font-size: 16px;
-  color: #ffffff;
-  margin-bottom: 8px;
+  color: #ced4da;
+  margin: 0;
+}
+
+a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0;
+}
+a:hover {
+  color: #6c757d;
+  text-decoration: underline;
 }
 
 p {
   font-size: 16px;
-  color: #a9a9a9;
+  color: #adb5bd;
   margin: 0;
 }
 
@@ -29,9 +40,7 @@ p {
   max-width: 576px;
 }
 
-#header {
-}
-
+/* Avatar Section */
 #avatar {
   margin-bottom: 20px;
 }
@@ -48,5 +57,22 @@ p {
   margin: 20px 0 0 120px;
 }
 
-#about {
+#about p {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+#education h2 {
+  margin-bottom: 8px;
+}
+
+/* Education Section */
+#education .list-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+#education .content {
+  margin-left: 50px;
 }

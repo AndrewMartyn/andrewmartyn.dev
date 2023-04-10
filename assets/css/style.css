@@ -2,6 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #a9a9a9;
   font-size: 16px;
+  font-weight: 450;
   background-color: black;
 }
 
@@ -38,6 +39,17 @@ p {
   margin: 0 auto;
   padding: 1rem 1rem;
   max-width: 576px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section*/
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  width: 100%;
 }
 
 /* Avatar Section */
@@ -50,11 +62,13 @@ p {
   height: 100px;
   border-radius: 50%;
   float: left;
-  background: blue;
+  background-color: purple;
+  line-height: 50px;
+  text-align: center;
 }
 
 #avatar .info {
-  margin: 20px 0 0 120px;
+  margin: 10px 0 0 120px;
 }
 
 #about p {
@@ -66,13 +80,33 @@ p {
   margin-bottom: 8px;
 }
 
-/* Education Section */
-#education .list-item {
+#workexperience h2 {
+  margin-bottom: 8px;
+}
+
+.list-item {
   display: flex;
   flex-direction: row;
+  /* justify-content: space-between; */
   margin-bottom: 30px;
 }
 
-#education .content {
-  margin-left: 60px;
+.list-item .heading {
+  min-width: 150px;
+  white-space: nowrap;
+}
+
+.list-item .content p {
+  word-break: normal;
+  white-space: normal;
+}
+
+/* Contact Section  */
+
+#contact h2 {
+  margin-bottom: 8px;
+}
+
+#contact .list-item {
+  margin-bottom: 0;
 }

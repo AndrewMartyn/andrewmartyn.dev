@@ -57,14 +57,21 @@ p {
   margin-bottom: 20px;
 }
 
-#avatar img {
-  width: 100px;
-  height: 100px;
+/* #avatar img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   float: left;
   background-color: purple;
   line-height: 50px;
   text-align: center;
+  overflow: hidden;
+} */
+
+#avatar img {
+  width: 100px;
+  float: left;
+  clip-path: circle();
 }
 
 #avatar .info {
